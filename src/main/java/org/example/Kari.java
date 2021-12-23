@@ -43,7 +43,7 @@ public class Kari {
 
             System.out.println(arrs[0].substring(0,8));
             System.out.println(arrs[1].substring(0,8));
-            System.out.println(arrs[2].substring(0,8));
+            System.out.println(arrs[1].substring(0,8));
 
 
     }
