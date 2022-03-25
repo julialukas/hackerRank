@@ -1,6 +1,6 @@
 package org.example;
 
-public class ReverseAString {
+public class REVERSE_STRING {
     public static String reverseMe(String str){
         if(str.length()<=1){
             return str;

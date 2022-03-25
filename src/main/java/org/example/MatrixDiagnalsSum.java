@@ -33,15 +33,15 @@ diagonalDifference(matrix);
     public static int diagonalDifference(List<List<Integer>> arr) {
         // Write your code here
         int sum1=0;
-int sum2=0;
+        int sum2=0;
         for (int i = 0; i <arr.size() ; i++) { //col
             System.out.println(arr.get(i));
             for (int j = 0; j <arr.get(i).size() ; j++) { //row
 
-if(i==j){
-    sum1+=arr.get(i).get(j);
+        if(i==j){
+           sum1+=arr.get(i).get(j);
 
-}
+        }
 if(i==(arr.get(i).size()-j-1)){
     sum2+=arr.get(i).get(j);
 }
