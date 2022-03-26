@@ -18,6 +18,15 @@ public class FACTORIAL {
             return (n * factorial(n - 1));
     }
 
+
+    public int factorial2(int n)
+    {
+        int res = 1, i;
+        for (i = 2; i <= n; i++)
+            res *= i;
+        return res;
+    }
+
     @Test
     @DisplayName("Testing FACTORIAL")
     @ParameterizedTest

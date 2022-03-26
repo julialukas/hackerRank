@@ -7,11 +7,19 @@ import org.json.simple.parser.ParseException;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Iterator;
+import java.util.Arrays;
 
 public class ReadFile {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+    /*
+WRITE TO FILE
+     */
+//            FileWriter myWriter = new FileWriter("data.txt");
+//            myWriter.write("Files in Java might be tricky, but it is fun enough!");
+//            myWriter.close();
+//            System.out.println("Successfully wrote to the file.");
 
 
         JSONParser parser = new JSONParser();
@@ -20,9 +28,10 @@ public class ReadFile {
             Object obj = parser.parse(new FileReader("data.json"));
 
             JSONObject jsonObject = (JSONObject) obj;
+            JSONArray arr = (JSONArray) jsonObject.get("emergencyContacts");
 
-            String name = (String) jsonObject.get("person");
-            System.out.println(name);
+
+            System.out.println(jsonObject);
 
 
 //            // loop array
